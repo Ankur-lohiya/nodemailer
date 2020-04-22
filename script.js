@@ -35,6 +35,7 @@ app.post('/login/send',(req,res)=>{
             console.log(`Mail Sent at ${req.body.EMAIL}`);
         }
     });
+    console.log(req.body.NAME);
 });
 app.listen(5000);
 console.log(`listening on port 5000`);
